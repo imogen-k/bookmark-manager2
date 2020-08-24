@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) { "bookmark-manager" }
+
+group :development, :test do
+
+  gem "capybara"
+  gem "rspec"
+  gem "rubocop", "0.79.0"
+  gem "simplecov"
+  gem "sinatra"
+
+end
