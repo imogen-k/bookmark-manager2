@@ -11,4 +11,11 @@ describe Bookmarks do
     end
   end
 
+  describe '#.create' do
+    it 'adds a bookmark to database' do
+      Bookmarks.create('www.monzo.com')
+      expect(described_class.all).to include('www.monzo.com')
+    end
+  end
+
 end
