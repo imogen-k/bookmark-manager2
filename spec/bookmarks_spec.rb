@@ -4,7 +4,7 @@ describe Bookmarks do
 
   describe '#.all' do
     it 'returns all bookmarks stored in class' do
-      
+
       con = PG.connect :dbname => 'bookmark_manager_test'
 
       con.exec("INSERT INTO bookmarks (url) VALUES('http://www.makersacademy.com'); ")
@@ -19,7 +19,7 @@ describe Bookmarks do
 
   describe '#.create' do
     it 'adds a bookmark to database' do
-      Bookmarks.create('www.monzo.com')
+      Bookmarks.create(url:'www.monzo.com')
       expect(described_class.all).to include('www.monzo.com')
     end
   end
