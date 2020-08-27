@@ -10,6 +10,14 @@ CREATE DATABASE bookmark_manager;
 
 To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
 
+Connect to `psql` and create the `bookmark_manager_test` database:
+
+```
+CREATE DATABASE bookmark_manager_test;
+```
+
+Set up the appropriate table by connecting to the database in `psql` and run the SQL script in `db/migratins/01_create_bookmarks_table.sql`.
+
 ## User Stories ##
 
 ```
@@ -22,6 +30,6 @@ I want to see a list of my bookmarks
 
 ```
 As an internet user,
-So that I can save internet pages I like
+So that I can save internet pages for later retrieval
 I want to add urls to my list of my bookmarks
 ```

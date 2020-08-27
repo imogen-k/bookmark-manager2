@@ -6,9 +6,9 @@ feature 'viewing bookmarks' do
   end
 
   scenario 'A user can  see bookmarks' do
-    Bookmarks.create(url: "http://www.makersacademy.com")
-    Bookmarks.create(url: "http://www.destroyallsoftware.com")
-    Bookmarks.create(url: "http://www.google.com")
+    Bookmark.create(url: "http://www.makersacademy.com")
+    Bookmark.create(url: "http://www.destroyallsoftware.com")
+    Bookmark.create(url: "http://www.google.com")
 
     visit '/bookmarks'
     expect(page).to have_content "http://www.makersacademy.com"
