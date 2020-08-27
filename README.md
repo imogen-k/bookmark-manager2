@@ -1,6 +1,6 @@
 # Bookmark Manager
 
-### To set up the database
+### To set up the databases
 
 Connect to `psql` and create the `bookmark_manager` database:
 
@@ -16,7 +16,7 @@ Connect to `psql` and create the `bookmark_manager_test` database:
 CREATE DATABASE bookmark_manager_test;
 ```
 
-Set up the appropriate table by connecting to the database in `psql` and run the SQL script in `db/migratins/01_create_bookmarks_table.sql`.
+Set up the appropriate table by connecting to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
 
 ## User Stories ##
 
